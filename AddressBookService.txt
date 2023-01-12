@@ -33,3 +33,22 @@ mysql> desc addressbook;
 | Email       | varchar(20) | YES  |     | NULL    |       |
 +-------------+-------------+------+-----+---------+-------+
 8 rows in set (0.06 sec)
+
+mysql> insert into addressbook values('Ramaknat','Dada','Hubbli','Borgon','Karnatak',98987745,7474,'daad@123gmail.com');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into addressbook values('Rohan','Dada','belgavi','mapsa','goa',9899095,7074,'ad@123gmail.com');
+Query OK, 1 row affected (0.14 sec)
+
+mysql> insert into addressbook values('Roshan','Dada','belgavi','ankali','maharatsra',90999095,7098,'rd@123gmail.com');
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from addressbook;
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+| First_name | Last_name | Address | City   | State      | Phonenumber | Zipcode | Email             |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+| Ramaknat   | Dada      | Hubbli  | Borgon | Karnatak   |    98987745 |    7474 | daad@123gmail.com |
+| Rohan      | Dada      | belgavi | mapsa  | goa        |     9899095 |    7074 | ad@123gmail.com   |
+| Roshan     | Dada      | belgavi | ankali | maharatsra |    90999095 |    7098 | rd@123gmail.com   |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+3 rows in set (0.00 sec)
