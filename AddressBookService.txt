@@ -16,3 +16,20 @@ mysql> show databases;
 
 mysql> use addressbookservice;
 Database changed;
+mysql> create table addressbook(First_name varchar(30),Last_name varchar(20),Address varchar(20),City varchar(30),State varchar(20),Phonenumber int,Zipcode int,Email varchar(20));
+Query OK, 0 rows affected (0.12 sec)
+
+mysql> desc addressbook;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| First_name  | varchar(30) | YES  |     | NULL    |       |
+| Last_name   | varchar(20) | YES  |     | NULL    |       |
+| Address     | varchar(20) | YES  |     | NULL    |       |
+| City        | varchar(30) | YES  |     | NULL    |       |
+| State       | varchar(20) | YES  |     | NULL    |       |
+| Phonenumber | int         | YES  |     | NULL    |       |
+| Zipcode     | int         | YES  |     | NULL    |       |
+| Email       | varchar(20) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+8 rows in set (0.06 sec)
