@@ -78,3 +78,20 @@ mysql> select * from addressbook;
 | Roshan     | Dada      | belgavi | ankali | maharatsra |    90999095 |    7098 | rd@123gmail.com   |
 +------------+-----------+---------+--------+------------+-------------+---------+-------------------+
 2 rows in set (0.00 sec)
+
+
+mysql> select * from addressbook where City='Borgon';
++------------+-----------+---------+--------+----------+-------------+---------+-------------------+
+| First_name | Last_name | Address | City   | State    | Phonenumber | Zipcode | Email             |
++------------+-----------+---------+--------+----------+-------------+---------+-------------------+
+| Ramaknat   | Dada      | Hubbli  | Borgon | Karnatak |    98987745 |    7474 | daad@123gmail.com |
++------------+-----------+---------+--------+----------+-------------+---------+-------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from addressbook where City='ankali';
++------------+-----------+---------+--------+------------+-------------+---------+-----------------+
+| First_name | Last_name | Address | City   | State      | Phonenumber | Zipcode | Email           |
++------------+-----------+---------+--------+------------+-------------+---------+-----------------+
+| Roshan     | Dada      | belgavi | ankali | maharatsra |    90999095 |    7098 | rd@123gmail.com |
++------------+-----------+---------+--------+------------+-------------+---------+-----------------+
+1 row in set (0.00 sec)
