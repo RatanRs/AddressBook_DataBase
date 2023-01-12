@@ -66,3 +66,15 @@ mysql> select * from addressbook;
 | Roshan     | Dada      | belgavi | ankali | maharatsra |    90999095 |    7098 | rd@123gmail.com   |
 +------------+-----------+---------+--------+------------+-------------+---------+-------------------+
 3 rows in set (0.00 sec)
+
+mysql> delete from addressbook where State='goa';
+Query OK, 1 row affected (0.17 sec)
+
+mysql> select * from addressbook;
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+| First_name | Last_name | Address | City   | State      | Phonenumber | Zipcode | Email             |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+| Ramaknat   | Dada      | Hubbli  | Borgon | Karnatak   |    98987745 |    7474 | daad@123gmail.com |
+| Roshan     | Dada      | belgavi | ankali | maharatsra |    90999095 |    7098 | rd@123gmail.com   |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+2 rows in set (0.00 sec)
