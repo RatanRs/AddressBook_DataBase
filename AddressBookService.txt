@@ -150,3 +150,44 @@ mysql> select count(relation) from addressbook where City='ankali';
 |               1 |
 +-----------------+
 1 row in set (0.00 sec)
+mysql> update addressbook set relation='dad' where City='Borgon';
+Query OK, 1 row affected (0.05 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update addressbook set relation='mom' where City='ankali';
+Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbook;
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+----------+
+| First_name | Last_name | Address | City   | State      | Phonenumber | Zipcode | Email             | relation |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+----------+
+| Ramaknat   | Dada      | Hubbli  | Borgon | Karnatak   |    98987745 |    7474 | daad@123gmail.com | dad      |
+| Roshan     | Dada      | belgavi | ankali | maharatsra |    90999095 |    7098 | rd@123gmail.com   | mom      |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+----------+
+2 rows in set (0.00 sec)
+
+mysql> alter table addressbook add column relationname varchar(10);
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> update addressbook set relationname='Venkat' where City='ankali';
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update addressbook set relationname='raman' where City='ankali';
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update addressbook set relationname='Venkat' where City='Borgon';
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbook;
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+----------+--------------+
+| First_name | Last_name | Address | City   | State      | Phonenumber | Zipcode | Email             | relation | relationname |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+----------+--------------+
+| Ramaknat   | Dada      | Hubbli  | Borgon | Karnatak   |    98987745 |    7474 | daad@123gmail.com | dad      | Venkat       |
+| Roshan     | Dada      | belgavi | ankali | maharatsra |    90999095 |    7098 | rd@123gmail.com   | mom      | raman        |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+----------+--------------+
+2 rows in set (0.00 sec)
