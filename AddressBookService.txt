@@ -132,3 +132,21 @@ mysql> select * from addressbook;
 +------------+-----------+---------+--------+------------+-------------+---------+-------------------+----------+
 2 rows in set (0.00 sec)
 mysql>
+
+
+
+mysql> select count(relation) from addressbook where City='Borgon';
++-----------------+
+| count(relation) |
++-----------------+
+|               1 |
++-----------------+
+1 row in set (0.00 sec)
+
+mysql> select count(relation) from addressbook where City='ankali';
++-----------------+
+| count(relation) |
++-----------------+
+|               1 |
++-----------------+
+1 row in set (0.00 sec)
