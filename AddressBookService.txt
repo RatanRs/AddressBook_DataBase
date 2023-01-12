@@ -111,4 +111,11 @@ mysql> select count(*) from addressbook where City='ankali';
 +----------+
 1 row in set (0.00 sec)
 
-mysql>
+mysql> select * from addressbook order by Last_name Desc;
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+| First_name | Last_name | Address | City   | State      | Phonenumber | Zipcode | Email             |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+| Ramaknat   | Dada      | Hubbli  | Borgon | Karnatak   |    98987745 |    7474 | daad@123gmail.com |
+| Roshan     | Dada      | belgavi | ankali | maharatsra |    90999095 |    7098 | rd@123gmail.com   |
++------------+-----------+---------+--------+------------+-------------+---------+-------------------+
+2 rows in set (0.01 sec)
